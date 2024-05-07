@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background-color: aliceblue;
+
+}
+
+.root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .happy-life {
+        margin: 0;
+        height: '160px';
+        color: '#fff';
+        line-height: '160px';
+        text-align: 'center';
+        background-color: #364d79;
+        .box {
+            display: flex;
+            .left {
+                background-color: aqua;
+            }
+            .right {
+                background-color: palegreen;
+            }
+        }
+        .slick-list {
+            border: {
+                radius: 5px;
+            }
+    
+            ;
+        }
+    
+    }
+    
+     
+}
+
