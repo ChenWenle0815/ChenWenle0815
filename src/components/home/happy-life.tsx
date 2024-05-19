@@ -1,10 +1,10 @@
 import { Carousel } from 'antd';
 
 const happyList = [
-    { title: '旅游', image: '', description: '' },
-    { title: '摩托', image: '', description: '' },
-    { title: '运动', image: '', description: '' },
-    { title: '游戏', image: '', description: '' },
+    { title: '旅游', image: 'src/assets/datong.jpeg', description: '' },
+    { title: '摩托', image: 'src/assets/taban.jpeg', description: '' },
+    { title: '运动', image: 'src/assets/ski.jpeg', description: '' },
+    { title: '游戏', image: 'src/assets/chanchan.jpeg', description: '' },
 ]
 
 function HappyLife() {
@@ -21,9 +21,11 @@ function HappyLife() {
                         return (
                             <div key={index} >
                                 <div className='box'>
-                                    <div>left-box</div>
-                                    < div>right-box
+                                    <div className='left'>
                                         <h3 >{item.title}</h3>
+                                    </div>
+                                    < div className='right'>
+                                        <img src={item.image} alt="" /> 
                                     </div>
                                 </div>
                             </div>

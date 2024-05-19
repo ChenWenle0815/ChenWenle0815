@@ -1,0 +1,17 @@
+.blog {
+    display: flex;
+    width: 100%;
+    .menu {
+        min-width: 10%;
+        height: 100vh;
+        .ant-menu {
+            height: 100%;
+            border-radius: 5px;
+
+        }
+    }
+
+    .content {
+        flex: 1
+    }
+}
