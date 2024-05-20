@@ -2,11 +2,15 @@
 
 import React, { useState } from 'react';
 import { AppstoreOutlined, MailOutlined, SettingOutlined, MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons';
-import type { MenuProps, MenuTheme } from 'antd';
-import { Menu, Button } from 'antd';
+import type { MenuProps } from 'antd';
+import { Menu } from 'antd';
 
 
 type MenuItem = Required<MenuProps>['items'][number];
+
+interface DiyMenuProps {
+    theme: boolean; // 假设 theme 是一个布尔值
+  }
 
 const items: MenuItem[] = [
     {
@@ -50,7 +54,7 @@ const items: MenuItem[] = [
     },
 ];
 
-const MyMenu: React.FC = () => {
+const MyMenu: React.FC<DiyMenuProps> = ({theme}) => {
     const [current, setCurrent] = useState('1');
 
  
@@ -71,7 +75,7 @@ const MyMenu: React.FC = () => {
                     defaultSelectedKeys={['1']}
                     defaultOpenKeys={['sub1']}
                     mode="inline"
-                    theme="dark"
+                    theme={theme?'dark':'light'}
                     items={items}
                     onClick={onClick}
                     selectedKeys={[current]}

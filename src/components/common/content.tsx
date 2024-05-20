@@ -1,15 +1,12 @@
-import ContenHeader from "./ContenHeader"
-function Footer () {
+import Editor from "./Editor"
+function Content() {
     return (
         <>
-        
-        <div className="content">
-            <ContenHeader/>
-
-            这是footer，有一些我自己的介绍
-        </div>
+            <div className="content">
+                <Editor />
+            </div>
         </>
     )
 }
 
-export default Footer
+export default Content

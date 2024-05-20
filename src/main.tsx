@@ -4,23 +4,28 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './routes/home'
 import Job from './routes/job'
 import ErrorPage from './routes/error-page'
+import { Provider } from 'react-redux';
+import store from '@/store'
+import "react-quill/dist/quill.snow.css";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
-    errorElement:<ErrorPage />
-   
+    element: <Home />,
+    errorElement: <ErrorPage />
+
   },
   {
     path: "/job",
-    element: <Job/>,
-    errorElement:<ErrorPage />
-   
+    element: <Job />,
+    errorElement: <ErrorPage />
+
   }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );
