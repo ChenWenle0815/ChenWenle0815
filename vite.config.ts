@@ -8,5 +8,14 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src')
     }
+  },
+  server: {
+    proxy: {
+      // 代理所有请求到 127.0.0.1:8080
+      '/test': {
+        target: 'http://127.0.0.1:8080',
+        changeOrigin: true,
+      }
+    }
   }
 })

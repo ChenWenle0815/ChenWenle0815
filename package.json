@@ -12,6 +12,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
     "antd": "^5.17.0",
+    "axios": "^1.7.1",
     "lodash": "^4.17.21",
     "node-sass": "^9.0.0",
     "path": "^0.12.7",

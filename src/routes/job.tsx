@@ -4,8 +4,8 @@ import '../components/job/job.scss'
 import '../components/common/common.scss'
 import { useSelector, useDispatch } from 'react-redux';
 import { setTheme } from '@/store/modules/job';
-import { Switch } from 'antd';
-
+import { Switch,Button } from 'antd';
+import {test} from '../api/index'
 
 
 export default function Job() {
@@ -16,6 +16,11 @@ export default function Job() {
   // 通过useSelector直接拿到store中定义的value
   const { theme } = useSelector((store: any) => store.job);
 
+  const testApi = async ()=>{
+    const res = await test()
+    console.log("🚀 ~ testApi ~ res:", res)
+
+  }
 
   useEffect(() => {
     // 监听 counter 变化
@@ -27,6 +32,7 @@ export default function Job() {
       <div className='job'>
         <Blog>
           这里是切换的地方
+          <Button onClick={()=>testApi()}> 测试接口</Button>
           <Switch
             checked={theme}
             onChange={() => dispatch(setTheme({theme:!theme}))}
