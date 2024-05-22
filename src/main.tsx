@@ -1,28 +1,28 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from './routes/home'
-import Job from './routes/job'
-import ErrorPage from './routes/error-page'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './routes/home';
+import Job from './routes/job';
+import ErrorPage from './routes/error-page';
 import { Provider } from 'react-redux';
-import store from '@/store'
-import "react-quill/dist/quill.snow.css";
+import store from '@/store';
+import 'react-quill/dist/quill.snow.css';
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Home />,
     errorElement: <ErrorPage />
 
   },
   {
-    path: "/job",
+    path: '/job',
     element: <Job />,
     errorElement: <ErrorPage />
 
   }
 ]);
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Provider store={store}>
       <RouterProvider router={router} />

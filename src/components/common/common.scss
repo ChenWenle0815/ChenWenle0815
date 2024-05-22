@@ -10,31 +10,24 @@
 
         }
     }
-
     .content {
         flex: 1;
-              
+        .react-quill-wrap {
+          width: calc(100vw - 200px);
+          padding: 0 3%;
+          height: calc(100vh - 50px);
+          .title {
+            font-size: 20px;
+            font-weight: bolder;
+            padding: 10px 0 ;
+          }
+          .quill-editor-wrap {
+            width: 94%;
+            .quill  {
+              height:calc(100vh - 140px) ;
+            }
+          }
+        }
     }
-
-    
-    .controls {
-        display: flex;
-        border: 1px solid #ccc;
-        border-top: 0;
-        padding: 10px;
-      }
-      
-      .controls-right {
-        margin-left: auto;
-      }
-      
-      .state {
-        margin: 10px 0;
-        font-family: monospace;
-      }
-      
-      .state-title {
-        color: #999;
-        text-transform: uppercase;
-      }
+ 
 }

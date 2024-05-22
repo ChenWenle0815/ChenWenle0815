@@ -8,8 +8,8 @@ export interface JobState {
 }
 
 const initialState: JobState = {
-    theme: true,
-  title: "redux toolkit pre"
+  theme: true,
+  title: 'redux toolkit pre'
 };
 
 // 创建一个 Slice
@@ -22,7 +22,7 @@ export const job = createSlice({
 
   // 定义 reducers 并生成关联的操作
   reducers: {
-    setTheme(state, { payload }){
+    setTheme(state, { payload }) {
       console.log(payload);
       state.theme = payload.theme;
     }

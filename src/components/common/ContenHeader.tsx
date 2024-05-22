@@ -1,11 +1,11 @@
-function ContenHeader () {
-    return (
-        <>
-        <div>
+function ContenHeader() {
+  return (
+    <>
+      <div>
             这是footer，有一些我自己的介绍
-        </div>
-        </>
-    )
+      </div>
+    </>
+  );
 }
 
-export default ContenHeader
+export default ContenHeader;

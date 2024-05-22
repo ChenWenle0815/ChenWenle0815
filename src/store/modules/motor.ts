@@ -9,7 +9,7 @@ export interface MotorState {
 
 const initialState: MotorState = {
   counter: 0,
-  title: "redux toolkit pre"
+  title: 'redux toolkit pre'
 };
 
 // 创建一个 Slice
@@ -22,7 +22,7 @@ export const motor = createSlice({
 
   // 定义 reducers 并生成关联的操作
   reducers: {
-    setCounter(state, { payload }){
+    setCounter(state, { payload }) {
       console.log(payload);
       state.counter = payload.counter;
     }

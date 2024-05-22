@@ -1,11 +1,11 @@
-function Footer () {
-    return (
-        <>
-        <div className="Footer">
+function Footer() {
+  return (
+    <>
+      <div className="Footer">
             这是footer，有一些我自己的介绍
-        </div>
-        </>
-    )
+      </div>
+    </>
+  );
 }
 
-export default Footer
+export default Footer;

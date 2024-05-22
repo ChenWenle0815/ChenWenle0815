@@ -3,9 +3,9 @@ export interface loginDataType {
     username: string;
     password: string;
   }
-  
-  // userInfoType 接口定义
-  export interface userInfoType {
+
+// userInfoType 接口定义
+export interface userInfoType {
     id: number;
     name: string;
     email: string;

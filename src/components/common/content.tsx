@@ -1,12 +1,12 @@
-import Editor from "./Editor"
+import Editor from './Editor';
 function Content() {
-    return (
-        <>
-            <div className="content">
-                <Editor />
-            </div>
-        </>
-    )
+  return (
+    <>
+      <div className="content">
+        <Editor />
+      </div>
+    </>
+  );
 }
 
-export default Content
+export default Content;

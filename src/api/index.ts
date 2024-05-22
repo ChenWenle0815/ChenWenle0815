@@ -36,7 +36,7 @@ export function getUserInfoAPI() {
 
 /**
  * @description: 测试
- * @return 
+ * @return
  */
 export function test() {
   return http.get('/test');
