@@ -1,0 +1,21 @@
+{
+    "editor.tabSize": 2,
+    "cSpell.words": [
+      "ACCESSUSERAUDIT",
+      "DATASECURITYAUDIT",
+      "FEEDBACKED",
+      "mtdicon",
+      "REVIEWREJECTED",
+      "REVIEWTERMINATION",
+      "SELECTBOX",
+      "unapproval",
+      "UNDERREVIEW"
+    ],
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "compile-hero.disable-compile-files-on-did-save-code": true,
+    "eslint.format.enable": true,
+  
+    "editor.codeActionsOnSave":{
+      "source.fixAll.eslint": "explicit"
+    }
+  }
