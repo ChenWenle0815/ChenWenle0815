@@ -1,4 +1,4 @@
-/****   request.ts   ****/
+/** **   request.ts   *** */
 import axios, { AxiosError, AxiosResponse } from 'axios';
 // 消息提示组件
 import { message } from 'antd';
@@ -13,14 +13,14 @@ const service = axios.create({
 
 // 添加一个请求拦截器
 service.interceptors.request.use(
-  (config) => {
+  config => {
     // 发请求前做的一些处理，数据转化，配置请求头，设置token,设置loading等
     // 从localStorage中获取token
     const token = localStorage.getItem('token') ?? '';
 
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
-    } 
+    }
     return config;
   },
   (error: AxiosError) => {
@@ -41,10 +41,10 @@ service.interceptors.response.use(
     if (status === 200) {
       // 接口网络请求成功
       return data.data;
-      } else {
-        message.error(data.message || '接口返回错误');
-        return Promise.reject(data);
-      }    
+    }
+    message.error(data.message || '接口返回错误');
+    return Promise.reject(data);
+
   },
   (error: AxiosError) => {
     // 响应失败，关闭等待提示
