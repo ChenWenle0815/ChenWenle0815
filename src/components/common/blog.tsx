@@ -1,8 +1,12 @@
+import { ReactNode } from 'react';
 import Content from './content';
 import Menu from './menu';
 import { useSelector } from 'react-redux';
 
-function Blog({ children }) {
+interface BlogProps {
+    children: ReactNode;
+  }
+function Blog({ children }:BlogProps) {
 
   const { theme } = useSelector((state: any) => state.job);
 

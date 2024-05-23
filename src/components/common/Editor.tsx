@@ -6,7 +6,7 @@ import { Button } from 'antd';
 
 const ReactQuillEditor = () => {
   const [value, setValue] = useState('初始值');
-  const editorRef = useRef(null);
+  const editorRef:any = useRef(null);
 
   // 自定义工具栏
   const modules = {
@@ -45,7 +45,7 @@ const ReactQuillEditor = () => {
   }, 500);
 
   const handleGetEditor = () => {
-    console.log('编辑器实例：', editorRef?.current?.getEditor());
+    console.log('编辑器实例：', editorRef.current?.getEditor());
   };
 
   return (
