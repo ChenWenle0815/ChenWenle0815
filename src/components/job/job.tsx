@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import Blog from '../common/blog';
+import Blog from '../common/Blog';
 import './job.scss';
 import '../common/common.scss';
 import { useSelector, useDispatch } from 'react-redux';

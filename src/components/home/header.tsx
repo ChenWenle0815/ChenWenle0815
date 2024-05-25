@@ -2,8 +2,18 @@ function Header() {
   return (
     <>
       <div className="header">
-            这是我的header，这里有一个搜索框
-            生命没有意义，但是追寻生命意义的过程是有意义的。
+        <div className="box">
+          <div className="left">
+            <h3>陌生人，我也为你祝福</h3>
+            <h3>愿你有一个灿烂的前程</h3>
+            <h3>愿你有情人终成眷属</h3>
+            <h3>愿你在尘世获得幸福</h3>
+          </div>
+          <div className="right" >
+            <img src="src/assets/prase.png" alt="" />
+          </div>
+        </div>
+
       </div>
     </>
   );

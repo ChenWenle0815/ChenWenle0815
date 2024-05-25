@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
-import Content from './content';
-import Menu from './menu';
+import Content from './Content';
+import Menu from './Menu';
 import { useSelector } from 'react-redux';
 
 interface BlogProps {

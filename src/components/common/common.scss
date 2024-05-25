@@ -31,3 +31,33 @@
     }
  
 }
+
+.navigator {
+  height: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 2px solid #ccd7f3;
+  .wrapper {
+    width: 80%;
+    margin: 0 auto ;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    .link {
+      display: flex;
+      background-color: #fff;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      width: 70px;
+      margin: 20px;
+      color: inherit; /* 继承父元素的字体颜色 */
+      text-decoration: none; /* 去除下划线 */
+      
+    }
+    .link:hover {
+      background-color: #d7d7d7;
+      cursor: pointer;
+    }
+  }
+}
