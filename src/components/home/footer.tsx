@@ -1,9 +1,8 @@
 import './home.scss';
+import github from '../../assets/github.png';
+import weibo from '../../assets/weibo.png';
+import wordpress from '../../assets/wordpress.png';
 
-
-function getIcon(path: string) {
-  return new URL(path, import.meta.url).href;
-}
 
 
 function Footer() {
@@ -11,17 +10,17 @@ function Footer() {
     {
       name: 'Github',
       icon: '',
-      img: '../../assets/github.png'
+      img: github
     },
     {
       name: '微博',
       icon: '',
-      img: '../../assets/weibo.png'
+      img: weibo
     },
     {
       name: '博客',
       icon: '',
-      img: '../../assets/wordpress.png'
+      img: wordpress
     },
   ];
   return (
@@ -36,7 +35,7 @@ function Footer() {
               return (
                 <div>
                   <div>{item.name}</div>
-                  <img src={getIcon(item.img)} alt="" />
+                  <img src={item.img} alt="" />
                 </div>
               );
             })}
