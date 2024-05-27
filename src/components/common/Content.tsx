@@ -3,7 +3,7 @@ function Content() {
   return (
     <>
       <div className="content">
-        <Editor />
+        <Editor content='后面根据接口返回'/>
       </div>
     </>
   );

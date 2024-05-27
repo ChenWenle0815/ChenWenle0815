@@ -1,3 +1,5 @@
+import Img from '../../assets/prase.png';
+
 function Header() {
   return (
     <>
@@ -10,7 +12,7 @@ function Header() {
             <h3>愿你在尘世获得幸福</h3>
           </div>
           <div className="right" >
-            <img src="src/assets/prase.png" alt="" />
+            <img src={Img} alt="" />
           </div>
         </div>
 

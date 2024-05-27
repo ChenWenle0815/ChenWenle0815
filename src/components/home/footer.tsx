@@ -1,21 +1,27 @@
 import './home.scss';
 
+
+function getIcon(path: string) {
+  return new URL(path, import.meta.url).href;
+}
+
+
 function Footer() {
   const list = [
     {
       name: 'Github',
       icon: '',
-      img: 'src/assets/github.png'
+      img: '../../assets/github.png'
     },
     {
       name: '微博',
       icon: '',
-      img: 'src/assets/weibo.png'
+      img: '../../assets/weibo.png'
     },
     {
       name: '博客',
       icon: '',
-      img: 'src/assets/wordpress.png'
+      img: '../../assets/wordpress.png'
     },
   ];
   return (
@@ -30,7 +36,7 @@ function Footer() {
               return (
                 <div>
                   <div>{item.name}</div>
-                  <img src={item.img} alt="" />
+                  <img src={getIcon(item.img)} alt="" />
                 </div>
               );
             })}

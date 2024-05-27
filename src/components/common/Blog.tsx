@@ -14,7 +14,7 @@ function Blog({ children }:BlogProps) {
     <>
       <div className="blog">
         <Menu theme={theme}/>
-        <div>
+        <div className="right">
           <div >
             {children}
           </div>

@@ -1,34 +1,24 @@
 .blog {
-    display: flex;
-    width: 100%;
-    .menu {
-        min-width: 10%;
-        height: 100vh;
-        .ant-menu {
-            height: 100%;
-            border-radius: 5px;
+  display: flex;
+  width: 100%;
 
-        }
+  .menu {
+    min-width: 10%;
+    height: 100vh;
+
+    .ant-menu {
+      height: 100%;
+      border-radius: 5px;
+
     }
-    .content {
-        flex: 1;
-        .react-quill-wrap {
-          width: calc(100vw - 200px);
-          padding: 0 3%;
-          height: calc(100vh - 50px);
-          .title {
-            font-size: 20px;
-            font-weight: bolder;
-            padding: 10px 0 ;
-          }
-          .quill-editor-wrap {
-            width: 94%;
-            .quill  {
-              height:calc(100vh - 140px) ;
-            }
-          }
-        }
+  }
+
+  .right {
+    flex: 1;
+    .editor-wrapper {
+      width: 100%;
     }
+  }
  
 }
 
@@ -37,12 +27,14 @@
   width: 100%;
   background-color: #ffffff;
   border-bottom: 2px solid #ccd7f3;
+
   .wrapper {
     width: 80%;
-    margin: 0 auto ;
+    margin: 0 auto;
     display: flex;
     height: 100%;
     align-items: center;
+
     .link {
       display: flex;
       background-color: #fff;
@@ -51,10 +43,13 @@
       justify-content: center;
       width: 70px;
       margin: 20px;
-      color: inherit; /* 继承父元素的字体颜色 */
-      text-decoration: none; /* 去除下划线 */
-      
+      color: inherit;
+      /* 继承父元素的字体颜色 */
+      text-decoration: none;
+      /* 去除下划线 */
+
     }
+
     .link:hover {
       background-color: #d7d7d7;
       cursor: pointer;
