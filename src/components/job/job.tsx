@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setTheme } from '@/store/modules/job';
 import { Switch, Button } from 'antd';
 import { test } from '../../api/index';
-
+import { jobMenu } from '../../../database/wiki';
 
 export default function Job() {
 
@@ -30,7 +30,7 @@ export default function Job() {
   return (
     <>
       <div>
-        <Blog>
+        <Blog menu={jobMenu}>
           <div className='job-slot'>
             <div className='bread'>
                 面包屑
@@ -40,8 +40,8 @@ export default function Job() {
               <Switch
                 checked={theme}
                 onChange={() => dispatch(setTheme({ theme: !theme }))}
-                checkedChildren="Dark"
-                unCheckedChildren="Light"
+                checkedChildren="Light"
+                unCheckedChildren="Dark"
               />
             </div>
 

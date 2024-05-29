@@ -1,9 +1,14 @@
+import { useSelector } from 'react-redux';
 import Editor from './Editor';
+
+
 function Content() {
+  const { content } = useSelector((state: any) => state.job);
+
   return (
     <>
       <div className="content">
-        <Editor content='后面根据接口返回'/>
+        <Editor content={content}/>
       </div>
     </>
   );

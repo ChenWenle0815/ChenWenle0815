@@ -4,12 +4,14 @@ import { createSlice } from '@reduxjs/toolkit';
 
 export interface JobState {
   theme: boolean;
-  title: string
+  title: string;
+  content: string;
 }
 
 const initialState: JobState = {
-  theme: true,
-  title: 'redux toolkit pre'
+  theme: false,
+  title: 'redux toolkit pre',
+  content: ''
 };
 
 // 创建一个 Slice
@@ -25,12 +27,16 @@ export const job = createSlice({
     setTheme(state, { payload }) {
       console.log(payload);
       state.theme = payload.theme;
+    },
+    setContent(state, { payload }) {
+      console.log(payload);
+      state.content = payload.content;
     }
   },
 });
 
 // 导出 reducers 方法
-export const { setTheme } = job.actions;
+export const { setTheme, setContent } = job.actions;
 
 // 默认导出
 export default job.reducer;
