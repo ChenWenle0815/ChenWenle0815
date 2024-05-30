@@ -1,3 +1,4 @@
+import M_END from './M_END.md';
 interface IWiki {
     id: number;
     title: string;
@@ -18,7 +19,7 @@ const wikis:Array<IWiki> = [
   {
     id: 1,
     title: 'M端在玩什么？ ',
-    content: '## M端在玩什么？ ',
+    content: M_END,
     createTime: 1622547600000,
     updateTime: 1625139600000
   },

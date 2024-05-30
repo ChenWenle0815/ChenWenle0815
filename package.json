@@ -32,7 +32,8 @@
     "react-router-dom": "^6.23.0",
     "remark-gfm": "^4.0.0",
     "sass": "^1.76.0",
-    "sass-loader": "^14.2.1"
+    "sass-loader": "^14.2.1",
+    "vite-raw-plugin": "^1.0.2"
   },
   "devDependencies": {
     "@types/lodash": "^4.17.4",

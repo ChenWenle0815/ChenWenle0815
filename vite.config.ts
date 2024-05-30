@@ -1,10 +1,16 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import path from 'path';
+import markdownRawPlugin from 'vite-raw-plugin';
 // https://vitejs.dev/config/
 export default defineConfig({
   base: './',
-  plugins: [react()],
+  plugins: [
+    react(),
+    markdownRawPlugin({
+      fileRegex: /\.md$/
+    })
+  ],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
