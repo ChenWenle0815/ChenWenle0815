@@ -17,7 +17,7 @@ interface IMenu {
 
 const wikis:Array<IWiki> = [
   {
-    id: 1,
+    id: 11,
     title: 'M端在玩什么？ ',
     content: M_END,
     createTime: 1622547600000,
@@ -38,7 +38,7 @@ const wikis:Array<IWiki> = [
     updateTime: 1625312400000
   },
   {
-    id: 3,
+    id: 4,
     title: '你知道serverless吗？ ',
     content: '你知道serverless吗？',
     createTime: 1622720400000,
@@ -53,12 +53,12 @@ const jobMenu: IMenu[] = [
     desc: 'Vue、React、Webpack、Vite',
     children: [
       {
-        id: 1,
+        id: 11,
         name: 'M端在玩什么？ ',
         desc: 'M端在玩什么？ ',
       },
       {
-        id: 2,
+        id: 12,
         name: '纯静态页面与 Node 层 ',
         desc: '纯静态页面与 Node 层 ',
       }
@@ -70,12 +70,12 @@ const jobMenu: IMenu[] = [
     desc: 'Node、SQL、Go',
     children: [
       {
-        id: 3,
+        id: 21,
         name: 'Http 与 RPC ',
         desc: 'Http 与 RPC ',
       },
       {
-        id: 4,
+        id: 22,
         name: '你知道serverless吗？',
         desc: '你知道serverless吗？',
       }
@@ -87,12 +87,12 @@ const jobMenu: IMenu[] = [
     desc: '好用的开发工具',
     children: [
       {
-        id: 5,
+        id: 31,
         name: '命令行',
         desc: '开发Android应用',
       },
       {
-        id: 6,
+        id: 32,
         name: '截图',
         desc: '开发iOS应用',
       }

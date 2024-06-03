@@ -11,6 +11,7 @@ export default defineConfig({
       fileRegex: /\.md$/
     })
   ],
+
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
