@@ -13,7 +13,6 @@ const Navigator: React.FC = () => {
           <Link className="link" to="/">主页</Link>
           <Link className="link" to="/job">工作</Link>
           <Link className="link" to="/life">生活</Link>
-          <Link className="link" to="/thoughts">随想</Link>
         </div>
       </div>
     </Affix>

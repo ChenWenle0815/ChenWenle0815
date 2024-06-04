@@ -4,11 +4,14 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './routes/home';
 import Job from './routes/job';
+import Life from './routes/life';
 import ErrorPage from './routes/error-page';
 import Layout from './components/common/Layout'; // 引入布局组件
 import { Provider } from 'react-redux';
 import store from '@/store';
 import './index.css';
+import path from 'path';
+import LifeDetail from './components/life/detail';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -17,6 +20,8 @@ const router = createBrowserRouter([
     children: [
       { path: '/', element: <Home /> },
       { path: 'job', element: <Job /> },
+      { path: 'life', element: <Life /> },
+      { path: 'lifeDetail', element: <LifeDetail /> },
       // 其他子路由...
     ],
   },
