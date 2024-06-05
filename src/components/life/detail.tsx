@@ -3,7 +3,7 @@ import Editor from '@/components/common/Editor';
 import { useLocation } from 'react-router-dom';
 import { getWikiContent } from '@/sevices/life.service';
 
-function Job() {
+function LifeDetail() {
 
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
@@ -18,4 +18,4 @@ function Job() {
   );
 }
 
-export default Job;
+export default LifeDetail;

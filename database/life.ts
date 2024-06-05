@@ -1,4 +1,5 @@
 import M_END from './M_END.md';
+import Motor from './Motor.md';
 
 interface Life {
   id: number;
@@ -61,7 +62,7 @@ export const lifeList: Life[] = [
       name: '趣味人生',
       lifeDetailDTOS: [
         {
-          id: 3,
+          id: 21,
           name: '骑摩托',
           descriptionSummary: '欣赏最新电影，放松心情。',
           iconPath: motor,
@@ -106,6 +107,13 @@ export const lifeWikis = [
     id: 1,
     title: '北京 ',
     content: M_END,
+    createTime: 1622547600000,
+    updateTime: 1625139600000
+  },
+  {
+    id: 21,
+    title:  '摩托',
+    content: Motor,
     createTime: 1622547600000,
     updateTime: 1625139600000
   },

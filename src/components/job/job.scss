@@ -1,11 +1,13 @@
-.job-slot {
-  padding: 2px 26px 0 26px; 
-  display: flex;
-  .bread {
-    font-size: large;
-  }
-
-  .mode {
-    margin-left: auto;
+.job-wrapper {
+  .job-slot {
+    padding: 2px 26px 0 26px; 
+    display: flex;
+    .bread {
+      font-size: large;
+    }
+  
+    .mode {
+      margin-left: auto;
+    }
   }
 }

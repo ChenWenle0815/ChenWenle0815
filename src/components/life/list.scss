@@ -1,8 +1,12 @@
 .life {
   padding: 20px 0;
   background-color: #f6f8fa;
+  height: calc(100vh - 50px);
+  overflow: scroll;
 }
 
 .life-editor-box {
   padding: 20px 10%;
+  height: calc(100vh - 50px);
+  overflow: scroll;
 }

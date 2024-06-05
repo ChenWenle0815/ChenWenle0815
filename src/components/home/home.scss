@@ -3,7 +3,8 @@ body {
 }
 
 .root {
-    height: 100vh;
+    height: calc(100vh - 50px);
+    overflow: scroll;
     .header {
         background-color: #c9d7f6;
         height: 300px;
@@ -25,6 +26,7 @@ body {
                 flex: 2;
                 img {
                     width: 60%;
+                    max-width: 270px;
                  }
             }
             

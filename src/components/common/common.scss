@@ -2,10 +2,9 @@
 .blog {
   display: flex;
   width: 100%;
-
+  height: calc( 100vh - 50px);
   .menu {
     min-width: 10%;
-    height: 100vh;
 
     .ant-menu {
       height: 100%;

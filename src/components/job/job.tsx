@@ -29,7 +29,7 @@ export default function Job() {
 
   return (
     <>
-      <div>
+      <div className='job-wrapper'>
         <Blog menu={jobMenu}>
           <div className='job-slot'>
             <div className='bread'>
