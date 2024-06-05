@@ -7,7 +7,7 @@ interface Life {
   lifeCategoryDTO: {
     id: number;
     name: string;
-    iconPath: string;
+    iconPath?: string;
     lifeDetailDTOS: any[];
   };
 }

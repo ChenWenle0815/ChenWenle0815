@@ -6,6 +6,7 @@ interface Life {
   lifeCategoryDTO: {
     id: number;
     name: string;
+    iconPath?:'',
     lifeDetailDTOS: any[
     ];
   };
@@ -27,6 +28,7 @@ export const lifeList: Life[] = [
     lifeCategoryDTO: {
       id: 1,
       name: '四方游记',
+      iconPath:'',
       lifeDetailDTOS: [
         {
           id: 1,

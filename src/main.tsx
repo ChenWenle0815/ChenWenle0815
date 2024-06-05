@@ -10,7 +10,6 @@ import Layout from './components/common/Layout'; // 引入布局组件
 import { Provider } from 'react-redux';
 import store from '@/store';
 import './index.css';
-import path from 'path';
 import LifeDetail from './components/life/detail';
 const router = createBrowserRouter([
   {
