@@ -28,30 +28,30 @@ export const lifeList: Life[] = [
     lifeCategoryDTO: {
       id: 1,
       name: '四方游记',
-      iconPath:'',
+      iconPath: '',
       lifeDetailDTOS: [
         {
           id: 1,
           name: '北京',
-          descriptionSummary: '保持身体健康，增强体质。',
+          descriptionSummary: '离家三千里',
           iconPath: beijing,
         },
         {
           id: 2,
           name: '广州',
-          descriptionSummary: '科学膳食，健康饮食。',
+          descriptionSummary: '四年大学生活',
           iconPath: guangzhou,
         },
         {
           id: 2,
           name: '上海',
-          descriptionSummary: '科学膳食，健康饮食。',
+          descriptionSummary: '时尚的城市',
           iconPath: shanghai,
         },
         {
           id: 2,
           name: '昆明',
-          descriptionSummary: '科学膳食，健康饮食。',
+          descriptionSummary: '我的家🏠',
           iconPath: mushroom,
         },
       ],
@@ -66,14 +66,14 @@ export const lifeList: Life[] = [
         {
           id: 21,
           name: '骑摩托',
-          descriptionSummary: '欣赏最新电影，放松心情。',
+          descriptionSummary: '慢慢骑、骑到老',
           iconPath: motor,
 
         },
         {
           id: 4,
           name: '拍照片',
-          descriptionSummary: '呼吸新鲜空气，感受大自然。',
+          descriptionSummary: '有人的照片是回忆',
           iconPath: camera,
 
         },
@@ -89,13 +89,13 @@ export const lifeList: Life[] = [
         {
           id: 3,
           name: '滑雪',
-          descriptionSummary: '欣赏最新电影，放松心情。',
+          descriptionSummary: '白色鸦片',
           iconPath: ski,
         },
         {
           id: 4,
           name: '飞盘',
-          descriptionSummary: '呼吸新鲜空气，感受大自然。',
+          descriptionSummary: '各种运动集合体',
           iconPath: frisbee,
         },
       ],
@@ -114,7 +114,7 @@ export const lifeWikis = [
   },
   {
     id: 21,
-    title:  '摩托',
+    title: '摩托',
     content: Motor,
     createTime: 1622547600000,
     updateTime: 1625139600000
