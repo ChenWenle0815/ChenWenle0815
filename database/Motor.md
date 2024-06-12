@@ -68,7 +68,7 @@
 
 6.1 日儿童节 18：00 吃完晚饭去了温榆河公园。 
 
-![温榆河](https://bucket-for-image.s3.bitiful.net/IMG_2681.jpeg "我温榆河")
+![温榆河](https://bucket-for-image.s3.bitiful.net/IMG_2681.jpeg "温榆河")
 ![落日](https://bucket-for-image.s3.bitiful.net/IMG_2687.jpeg "落日")
 ![小车](https://bucket-for-image.s3.bitiful.net/IMG_2678.jpeg "小车")
 

@@ -1,4 +1,5 @@
 import M_END from './M_END.md';
+import JS_RUNTIME from './JS_RUNTME.md';
 interface IWiki {
     id: number;
     title: string;
@@ -24,9 +25,9 @@ const wikis:Array<IWiki> = [
     updateTime: 1625139600000
   },
   {
-    id: 2,
-    title: '纯静态页面与 Node 层 ',
-    content: '纯静态页面与 Node 层 ',
+    id: 12,
+    title: '从 JS 运行时说开去',
+    content: JS_RUNTIME,
     createTime: 1622634000000,
     updateTime: 1625226000000
   },
@@ -59,9 +60,14 @@ const jobMenu: IMenu[] = [
       },
       {
         id: 12,
-        name: '纯静态页面与 Node 层 ',
-        desc: '纯静态页面与 Node 层 ',
-      }
+        name: '从 JS 运行时说开去',
+        desc: '从 JS 运行时说开去',
+      },
+      {
+        id: 13,
+        name: '去 node 化',
+        desc: '去 node 化',
+      },
     ]
   },
   {
