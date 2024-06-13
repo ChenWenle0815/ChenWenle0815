@@ -21,8 +21,10 @@ const MyMenu: React.FC<DiyMenuProps> = ({ theme, menu }) => {
 
   const categoryId = searchParams.get('categoryId') || ''
   const id = searchParams.get('id')  || ''
-
+  
   const dispatch = useDispatch();
+  const content = getWikiContent(Number(id));
+  dispatch(setContent({ content }));
   const items: MenuItem[] = convertToMenuItem(menu);
   const onClick: MenuProps['onClick'] = e => {
     // 设置右侧内容区域 markdown
