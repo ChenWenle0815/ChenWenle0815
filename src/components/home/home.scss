@@ -150,7 +150,31 @@ body {
             .right-box {
                 margin-left: 20px;
                 flex: 3;
+
+                .wiki_logon {
+                    font-size: x-large  ;
+                }
+                
+                .wiki {
+                    padding: 5px 20px;
+                    cursor: pointer;
+                }
+               
+                .wiki:hover {
+                    color: grey;
+                }
+
+                .wiki:first-child {
+                    margin-top: 20px;
+                }
+
+                .wiki_list {
+                    height: 300px;
+                    overflow-y: scroll;
+                }
             }
+
+            
         }
 
     }

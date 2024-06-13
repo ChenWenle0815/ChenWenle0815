@@ -1,4 +1,7 @@
 import workImg from '../../assets/work.png';
+import { wikis } from '../../../database/wiki';
+import { Avatar, List } from 'antd';
+import { Link } from 'react-router-dom';
 
 function FuckJob() {
   return (
@@ -13,7 +16,24 @@ function FuckJob() {
             <img src={workImg} alt="" />
           </div>
           <div className="right-box">
-            这里是对傻逼工作的一些思考
+            <div className='wiki_logon'>总是播种，常常期待，有时收获。</div>
+            <List
+            className='wiki_list'
+              itemLayout="horizontal"
+              dataSource={wikis}
+              renderItem={(item, index) => (
+                <List.Item>
+                  <List.Item.Meta
+                    avatar={<Avatar src={`https://api.dicebear.com/7.x/miniavs/svg?seed=${index}`} />}
+                    title={<Link 
+                      to={`/job?categoryId=${item.categoryId}&id=${item.id}`}>
+                        {item.title}</Link>
+                    }
+                    description={item.description}
+                  />
+                </List.Item>
+              )}
+            />
           </div>
         </div>
       </div>

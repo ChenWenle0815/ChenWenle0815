@@ -6,12 +6,20 @@ export interface JobState {
   theme: boolean;
   title: string;
   content: string;
+  menuActive: {
+    categoryId: number|string,
+    id: number|string
+  }
 }
 
 const initialState: JobState = {
   theme: false,
   title: 'redux toolkit pre',
-  content: ''
+  content: '',
+  menuActive:{
+    categoryId:'',
+    id:''
+  }
 };
 
 // 创建一个 Slice
@@ -31,12 +39,15 @@ export const job = createSlice({
     setContent(state, { payload }) {
       console.log(payload);
       state.content = payload.content;
+    },
+    setMenuActive(state,{payload}) {
+      state.menuActive = payload.value;
     }
   },
 });
 
 // 导出 reducers 方法
-export const { setTheme, setContent } = job.actions;
+export const { setTheme, setContent ,setMenuActive} = job.actions;
 
 // 默认导出
 export default job.reducer;

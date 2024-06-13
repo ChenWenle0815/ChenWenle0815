@@ -25,6 +25,7 @@
     "axios": "^1.7.1",
     "highlight.js": "^11.9.0",
     "lodash": "^4.17.21",
+    "lucide-react": "^0.394.0",
     "node-sass": "^9.0.0",
     "path": "^0.12.7",
     "postcss": "^8.4.38",

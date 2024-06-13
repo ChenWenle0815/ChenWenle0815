@@ -7,6 +7,7 @@ import { IMenu } from '../../../database/wiki';
 import { convertToMenuItem, getWikiContent } from '@/sevices/job.service';
 import { useDispatch } from 'react-redux';
 import { setContent } from '@/store/modules/job';
+import { useSearchParams } from 'react-router-dom';
 type MenuItem = Required<MenuProps>['items'][number];
 
 interface DiyMenuProps {
@@ -15,34 +16,34 @@ interface DiyMenuProps {
   }
 
 
-
 const MyMenu: React.FC<DiyMenuProps> = ({ theme, menu }) => {
-  const [current, setCurrent] = useState('1');
+  let [searchParams,setSearchParams] = useSearchParams();
+
+  const categoryId = searchParams.get('categoryId') || ''
+  const id = searchParams.get('id')  || ''
+
   const dispatch = useDispatch();
   const items: MenuItem[] = convertToMenuItem(menu);
-
   const onClick: MenuProps['onClick'] = e => {
-    console.log('click ', e);
-    setCurrent(e.key);
     // 设置右侧内容区域 markdown
+    console.log(e)
+    setSearchParams({
+      categoryId: e.keyPath[1],
+      id: e.keyPath[0],
+    })
     const content = getWikiContent(Number(e.key));
     dispatch(setContent({ content }));
   };
-
-
-
-
   return (
     <>
       <div className='menu'>
         <Menu
-          defaultSelectedKeys={['1']}
-          defaultOpenKeys={['sub1']}
+          defaultSelectedKeys={[categoryId,id]}
+          defaultOpenKeys={[categoryId,id]}
           mode="inline"
           theme={theme ? 'dark' : 'light'}
           items={items}
           onClick={onClick}
-          selectedKeys={[current]}
         />
       </div>
     </>

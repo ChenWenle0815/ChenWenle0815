@@ -2,8 +2,14 @@
 import camera from '../../assets/camera.png';
 import motor from '../../assets/motor.png';
 import swim from '../../assets/swim.png';
+import { useNavigate } from "react-router-dom"
 
 function HappyLife() {
+  const navigate = useNavigate()
+    const goLife = () => {
+      // 代码跳转路由
+      navigate('/life', { replace: false })
+    }
 
   const happyList = [
     { title: '旅游', image: camera, description: 'To be a salior of the world,bound for all ports' },
@@ -21,7 +27,7 @@ function HappyLife() {
         <div className="happy-box">
           {happyList.map(item => {
             return (
-              <div className="happy-item">
+              <div className="happy-item" onClick={goLife}>
                 <img src={item.image} alt="" />
                 <div className="title">
                   {item.title}
@@ -33,8 +39,6 @@ function HappyLife() {
             );
           })}
         </div>
-
-
       </div>
     </>
   );
