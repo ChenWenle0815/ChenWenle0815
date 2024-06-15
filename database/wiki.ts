@@ -1,5 +1,6 @@
 import M_END from './M_END.md';
 import JS_RUNTIME from './JS_RUNTME.md';
+import WORK from './Work.md';
 interface IWiki {
     id: number;
     title: string;
@@ -20,6 +21,15 @@ interface IMenu {
 }
 
 const wikis:Array<IWiki> = [
+  {
+    id: 0,
+    title: 'Keep looking, don’t settle',
+    content: WORK,
+    createTime: 1622547600000,
+    updateTime: 1625139600000,
+    categoryId:0,
+    description:'我们为什么工作？'
+  },
   {
     id: 11,
     title: 'M端在玩什么？ ',
