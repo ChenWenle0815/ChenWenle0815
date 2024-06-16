@@ -21,7 +21,9 @@ export default function MarkdownToHtml({ content }: { content: string }) {
                   <div className="flex items-center gap-2">
                     <Terminal size={18} />
                     <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                      {node?.data?.meta}
+                      { // @ts-ignore
+                      node?.data?.meta
+                      }
                     </p>
                   </div>
                   <CopyButton id={id} />

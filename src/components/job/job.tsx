@@ -17,7 +17,7 @@ export default function Job() {
 
   // 通过useSelector直接拿到store中定义的value
   const { theme } = useSelector((store: any) => store.job);
-
+// @ts-ignore
   const testApi = async () => {
     const res = await test();
     console.log('🚀 ~ testApi ~ res:', res);
