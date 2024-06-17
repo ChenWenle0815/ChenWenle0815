@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=1C111A&multiline=true&width=700&height=39&lines=Boys%2C+you+must+strive+to+find+your+own+voice.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=1C111A&multiline=true&width=700&height=39&lines=Keep+looking%EF%BC%8C+do+not+settle!.)](https://git.io/typing-svg)
 ###  Here is a breif introduction.
 -  👋 Hi, I’m ChenWenLe
 - 👀 I’m interested in FE,BE and ML.
