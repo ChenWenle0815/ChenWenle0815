@@ -103,16 +103,17 @@ export const lifeList: Life[] = [
         },
         {
           id: 2,
-          name: '广州',
-          descriptionSummary: '四年大学生活',
-          iconPath: guangzhou,
-        },
-        {
-          id: 3,
           name: '上海',
           descriptionSummary: '时尚的城市',
           iconPath: shanghai,
         },
+        {
+          id: 3,
+          name: '广州',
+          descriptionSummary: '四年大学生活',
+          iconPath: guangzhou,
+        },
+     
         {
           id: 4,
           name: '昆明',
