@@ -26,6 +26,9 @@ importers:
       highlight.js:
         specifier: ^11.9.0
         version: 11.9.0
+      json5:
+        specifier: ^2.2.3
+        version: 2.2.3
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
@@ -68,6 +71,9 @@ importers:
       sass-loader:
         specifier: ^14.2.1
         version: 14.2.1(node-sass@9.0.0)(sass@1.76.0)
+      uuid:
+        specifier: ^10.0.0
+        version: 10.0.0
       vite-raw-plugin:
         specifier: ^1.0.2
         version: 1.0.2
@@ -1811,6 +1817,11 @@ packages:
   json2mq@0.2.0:
     resolution: {integrity: sha512-SzoRg7ux5DWTII9J2qkrZrqV1gt+rTaoufMxEzXbS26Uid0NwaJd123HcoB80TgubEppxxIGdNxCx50fEoEWQA==}
 
+  json5@2.2.3:
+    resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
+    engines: {node: '>=6'}
+    hasBin: true
+
   jsonfile@6.1.0:
     resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
 
@@ -3273,6 +3284,10 @@ packages:
 
   util@0.10.4:
     resolution: {integrity: sha512-0Pm9hTQ3se5ll1XihRic3FDIku70C+iHUdT/W926rSgHV5QgXsYbKZN8MSC3tJtSkhuROzvsQjAaFENRXr+19A==}
+
+  uuid@10.0.0:
+    resolution: {integrity: sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==}
+    hasBin: true
 
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
@@ -5150,6 +5165,8 @@ snapshots:
     dependencies:
       string-convert: 0.2.1
 
+  json5@2.2.3: {}
+
   jsonfile@6.1.0:
     dependencies:
       universalify: 2.0.1
@@ -7019,6 +7036,8 @@ snapshots:
   util@0.10.4:
     dependencies:
       inherits: 2.0.3
+
+  uuid@10.0.0: {}
 
   validate-npm-package-license@3.0.4:
     dependencies:

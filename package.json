@@ -24,6 +24,7 @@
     "autoprefixer": "^10.4.19",
     "axios": "^1.7.1",
     "highlight.js": "^11.9.0",
+    "json5": "^2.2.3",
     "lodash": "^4.17.21",
     "lucide-react": "^0.394.0",
     "node-sass": "^9.0.0",
@@ -38,6 +39,7 @@
     "remark-gfm": "^4.0.0",
     "sass": "^1.76.0",
     "sass-loader": "^14.2.1",
+    "uuid": "^10.0.0",
     "vite-raw-plugin": "^1.0.2"
   },
   "devDependencies": {

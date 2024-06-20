@@ -2,6 +2,7 @@ import M_END from './M_END.md';
 import JS_RUNTIME from './JS_RUNTME.md';
 import WORK from './Work.md';
 import No_Node from './NO_NODE.md';
+import JSON from './JSON.md';
 interface IWiki {
     id: number;
     title: string;
@@ -18,7 +19,6 @@ interface IMenu {
   desc: string;
   wikiId?: number; // 可选属性，表示与之关联的wiki条目的ID
   children?: IMenu[];
-  
 }
 
 const wikis:Array<IWiki> = [
@@ -28,8 +28,8 @@ const wikis:Array<IWiki> = [
     content: WORK,
     createTime: 1622547600000,
     updateTime: 1625139600000,
-    categoryId:0,
-    description:'我们为什么工作？'
+    categoryId: 0,
+    description: '我们为什么工作？'
   },
   {
     id: 11,
@@ -37,8 +37,8 @@ const wikis:Array<IWiki> = [
     content: M_END,
     createTime: 1622547600000,
     updateTime: 1625139600000,
-    categoryId:1,
-    description:'讲讲工作两年来对M端不同阶段的理解'
+    categoryId: 1,
+    description: '讲讲工作两年来对M端不同阶段的理解'
   },
   {
     id: 12,
@@ -46,8 +46,26 @@ const wikis:Array<IWiki> = [
     content: JS_RUNTIME,
     createTime: 1622634000000,
     updateTime: 1625226000000,
-    categoryId:1,
-    description:'这是很多面试题的来源之处'
+    categoryId: 1,
+    description: '这是很多面试题的来源之处'
+
+  },
+  {
+    id: 13,
+    title: '去 node 化 ',
+    content: No_Node,
+    createTime: 1622720400000,
+    updateTime: 1625312400000,
+    categoryId: 2
+  },
+  {
+    id: 14,
+    title: '关于 JSON 我知道的也不多',
+    content: JSON,
+    createTime: 1622634000000,
+    updateTime: 1625226000000,
+    categoryId: 1,
+    description: '日常遇到的一些 JSON 问题'
 
   },
   {
@@ -56,7 +74,7 @@ const wikis:Array<IWiki> = [
     content: 'Http 与 RPC ',
     createTime: 1622720400000,
     updateTime: 1625312400000,
-    categoryId:2
+    categoryId: 2
   },
   {
     id: 22,
@@ -64,23 +82,16 @@ const wikis:Array<IWiki> = [
     content: '你知道serverless吗？',
     createTime: 1622720400000,
     updateTime: 1625312400000,
-    categoryId:2
+    categoryId: 2
   },
-  {
-    id: 13,
-    title: '去 node 化 ',
-    content: No_Node,
-    createTime: 1622720400000,
-    updateTime: 1625312400000,
-    categoryId:2
-  },
+
   {
     id: 22,
     title: '你知道serverless吗？ ',
     content: '你知道serverless吗？',
     createTime: 1622720400000,
     updateTime: 1625312400000,
-    categoryId:2
+    categoryId: 2
   },
 ];
 
@@ -104,6 +115,11 @@ const jobMenu: IMenu[] = [
         id: 13,
         name: '去 node 化',
         desc: '去 node 化',
+      },
+      {
+        id: 14,
+        name: '关于 JSON 我知道的也不多',
+        desc: '关于 JSON 我知道的也不多',
       },
     ]
   },
