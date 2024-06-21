@@ -1,0 +1,73 @@
+<!--
+ * @Author: cc_ray changrui03@meituan.com
+ * @Date: 2024-06-20 11:24:32
+ * @LastEditors: cc_ray changrui03@meituan.com
+ * @LastEditTime: 2024-06-21 16:14:27
+ * @FilePath: /ChenWenle0815/database/CMD.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+## Mac 好用的命令行工具 
+
+我们指导 MacOS 是在 Lunix 系统上演变过来的，因此经常会用到一些 shell 命令，但是 Mac 系统自带的工具，比较单调与朴实，我们可以改造以提升生产力。
+
+### ZSH
+Zsh（Z Shell）是一个强大的命令行解释器，用于 UNIX 系统，它提供了 Bash 和其他 shell 的许多改进特性。Zsh 是由 'Paul Falstad' 在 1990 年首次发布的，现在由社区维护。它不仅兼容 Bash，还提供了许多新特性和强大的插件和主题系统，使得它在开发者和终端用户中非常受欢迎。
+
+Zsh 的一些主要特性包括：
+主题和插件支持：通过 Oh My Zsh、Prezto、Zim 等框架，可以轻松添加主题和插件来扩展 Zsh 的功能。
+改进的自动补全：Zsh 提供了强大的命令补全功能，包括对命令参数和选项的补全。
+更好的命令历史管理：Zsh 提供了高级的历史管理特性，包括历史共享、历史搜索等。
+拼写检查和建议：当你输入的命令有拼写错误时，Zsh 可以提供修正建议。
+扩展的文件通配符：Zsh 支持强大的文件通配符，使文件匹配更加灵活和强大。
+高级脚本和函数：Zsh 的脚本语言提供了许多高级特性，使得编写复杂的 shell 脚本和函数更加容易。
+
+#### 安装 Zsh
+在大多数 UNIX 系统和 Linux 发行版中，可以通过包管理器安装 Zsh：
+在 Ubuntu/Debian 上：
+``` shell
+sudo apt-get update
+sudo apt-get install zsh
+```
+在 CentOS/RHEL 上：
+``` shell
+sudo yum install zsh
+```
+在 macOS 上：
+``` shell
+brew install zsh
+```
+
+#### 设置 Zsh 为默认 Shell
+安装 Zsh 后，你可以使用 chsh 命令将默认 shell 更改为 Zsh：
+``` shell
+chsh -s $(which zsh)
+``` 
+这将要求你输入你的密码。更改后，你需要注销并重新登录，或者重新启动终端会话以使更改生效。
+
+#### 使用 Oh My Zsh
+Oh My Zsh 是一个流行的开源框架，用于管理 Zsh 配置。它提供了大量的插件和主题，使得定制你的 shell 体验变得非常简单。
+
+#### 安装 Oh My Zsh：
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+安装完成后，你可以通过编辑 ~/.zshrc 文件来启用插件和更改主题。
+Zsh 通过其丰富的特性和定制选项，为用户提供了强大且愉悦的命令行体验。
+
+**但是，我在 mac2019 款上，使用了之后，常常因为其主体和插件，导致命令行很难用，要等待其酷炫的效果结束才能执行命令，带上了痛苦面具。因为我推荐 Wrap。**
+
+### Wrap 
+Warp 是一个现代化的终端应用，旨在为开发者提供更高效、更智能的命令行体验。它不同于传统的终端模拟器，如 iTerm2、GNOME Terminal 或 Windows Terminal，Warp 提供了一系列创新的功能和改进，以提高开发者的生产力。
+
+Warp 终端的主要特性包括：
+1. 智能自动补全：Warp 提供了基于上下文的智能自动补全功能，可以根据之前的命令和输出预测你可能想要输入的命令，从而加快命令输入速度。
+2. 命令输出结构化：Warp 能够理解命令的输出，并以结构化的方式展示，使得查找和理解输出信息更加容易。
+3. 协作和共享：Warp 允许用户轻松地与他人共享命令和输出，便于团队协作和问题解决。
+4. 工作区和标签：Warp 提供了工作区和标签功能，使得组织和管理多个终端会话更加高效。
+5. 美观的用户界面：Warp 拥有现代化且美观的用户界面，提供了多种主题和定制选项，以适应不同用户的偏好。
+6. 强大的搜索功能：Warp 提供了强大的搜索功能，可以快速查找之前的命令和输出。
+7. 内置的 Git 集成：Warp 提供了内置的 Git 集成，使得执行 Git 命令和查看仓库状态更加方便。
+
+安装 Warp
+Warp 目前主要支持 macOS，可以通过访问 [Warp 的官方网站](https://www.warp.dev/)下载安装包进行安装。对于其他操作系统的支持，Warp 团队正在开发中。
+使用 Warp
+安装 Warp 后，你可以像使用其他终端应用一样使用 Warp。Warp 的界面和功能设计都旨在直观易用，你可以通过探索 Warp 的菜单和设置来了解其所有功能。
+Warp 终端通过提供一系列创新功能和改进，旨在提升开发者的命令行体验。无论是通过智能自动补全加速命令输入，还是通过结构化输出提高信息的可读性，Warp 都致力于使终端工作变得更加高效和愉悦。
