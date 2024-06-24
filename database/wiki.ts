@@ -3,6 +3,12 @@ import JS_RUNTIME from './JS_RUNTME.md';
 import WORK from './Work.md';
 import No_Node from './NO_NODE.md';
 import JSON from './JSON.md';
+import CMD from './CMD.md';
+import GITLENS from './GITLENS.md';
+import SEARCH from './SEARCH.md';
+import VSCODE_PLUGIN from './VSCODE_PLUGIN.md';
+import SHOT from './SHOT.md';
+import BARTENDER from './BARTENDER.md';
 interface IWiki {
     id: number;
     title: string;
@@ -77,18 +83,50 @@ const wikis:Array<IWiki> = [
     categoryId: 2
   },
   {
-    id: 22,
-    title: '你知道serverless吗？ ',
-    content: '你知道serverless吗？',
+    id: 31,
+    title: 'CMD',
+    content: CMD,
     createTime: 1622720400000,
     updateTime: 1625312400000,
     categoryId: 2
   },
 
   {
-    id: 22,
-    title: '你知道serverless吗？ ',
-    content: '你知道serverless吗？',
+    id: 32,
+    title: '截图',
+    content: SHOT,
+    createTime: 1622720400000,
+    updateTime: 1625312400000,
+    categoryId: 2
+  },
+  {
+    id: 33,
+    title: '全局助手',
+    content: SEARCH,
+    createTime: 1622720400000,
+    updateTime: 1625312400000,
+    categoryId: 2
+  },
+  {
+    id: 34,
+    title: ' GIT 可视化 ',
+    content: GITLENS,
+    createTime: 1622720400000,
+    updateTime: 1625312400000,
+    categoryId: 2
+  },
+  {
+    id: 35,
+    title: '菜单栏 ',
+    content: BARTENDER,
+    createTime: 1622720400000,
+    updateTime: 1625312400000,
+    categoryId: 2
+  },
+  {
+    id: 36,
+    title: 'VSCODE 插件 ',
+    content: VSCODE_PLUGIN,
     createTime: 1622720400000,
     updateTime: 1625312400000,
     categoryId: 2

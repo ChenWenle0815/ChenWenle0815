@@ -1,0 +1,22 @@
+<!--
+ * @Author: cc_ray changrui03@meituan.com
+ * @Date: 2024-06-20 11:27:49
+ * @LastEditors: cc_ray changrui03@meituan.com
+ * @LastEditTime: 2024-06-24 17:15:04
+ * @FilePath: /ChenWenle0815/database/SEARCH.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+## Mac 好用的全局搜索工具 
+下面的三款软件很像，我现在在用 Raycast。 
+### Raycast 
+Raycast 是一款面向 macOS 的效率工具，类似于 Alfred。它允许用户通过快捷键快速启动应用、搜索文件、执行脚本、管理任务等。Raycast 的设计注重简洁和速度，提供了一个干净、无干扰的用户界面，旨在通过减少鼠标操作和窗口切换来提高工作效率。
+Raycast 支持大量内置功能，并且可以通过扩展（extensions）来增加新的功能。这些扩展可以是自定义脚本、集成第三方服务等，极大地扩展了 Raycast 的用途。
+![](https://s2.loli.net/2024/06/24/ztaD24wAVPqBQLO.png)
+
+### Alfred 
+Alfred 是一款针对 macOS 系统的效率工具软件，它提供了快速启动应用、搜索文件、自定义热键、剪贴板历史管理等功能。用户可以通过简单的关键词搜索来快速找到文件、应用程序或执行特定的系统命令。此外，Alfred 还支持**自定义工作流（Workflows）**，允许用户根据自己的需求创建复杂的任务自动化流程。
+![](https://s2.loli.net/2024/06/24/hLBXAsEuRMK6qe3.png)
+### Utools 
+UTools 是一款面向 Windows、macOS 和 Linux 平台的效率工具软件，它集成了快速启动、插件市场、主题自定义等多种功能。用户可以通过 UTools 快速找到文件、启动应用程序、搜索网络内容，以及使用各种各样的插件来扩展其功能，如截图、颜色拾取、密码管理等。
+UTools 的特点之一是其**插件市场**，用户可以根据自己的需求下载和安装各种插件，极大地提高了工作和生活的效率。此外，UTools 还支持自定义快捷键和主题，用户可以根据个人喜好来调整软件的外观和使用方式
+![](https://s2.loli.net/2024/06/24/vkgBEJVjLzdP8FU.png)
