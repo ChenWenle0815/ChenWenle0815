@@ -1,11 +1,4 @@
-<!--
- * @Author: cc_ray changrui03@meituan.com
- * @Date: 2024-06-20 15:00:18
- * @LastEditors: cc_ray changrui03@meituan.com
- * @LastEditTime: 2024-06-20 15:17:56
- * @FilePath: /ChenWenle0815/database/JSON.md
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
+
 ### 合格的 JSON 
 合格的 JSON 格式遵循一套严格的规则，这些规则定义了数据如何被结构化，以便能够在不同的系统之间进行交换。JSON（JavaScript Object Notation）是一种轻量级的数据交换格式，易于人阅读和编写，同时也易于机器解析和生成。以下是构成合格 JSON 格式的一些基本规则：
 

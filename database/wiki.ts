@@ -214,44 +214,8 @@ const jobMenu: IMenu[] = [
         desc: '生产力起飞',
       },
     ]
-  },
-  {
-    id: 4,
-    name: '方法论',
-    desc: '学学怎么思考、怎么做事，少走点弯路',
-    children: [
-      {
-        id: 31,
-        name: '命令行',
-        desc: '弥补系统自带的终端',
-      },
-      {
-        id: 32,
-        name: '截图',
-        desc: '截图、钉在屏幕上、取色',
-      },
-      {
-        id: 33,
-        name: '全局助手',
-        desc: '快速打开应用',
-      },
-      {
-        id: 34,
-        name: 'Git可视化',
-        desc: '清晰看到 git 工作流，快速进行 git 操作',
-      },
-      {
-        id: 35,
-        name: 'Bartender',
-        desc: '控制 Mac 顶部菜单栏',
-      },
-      {
-        id: 36,
-        name: 'VsCode插件',
-        desc: '生产力起飞',
-      },
-    ]
   }
+  
 ];
 
 
