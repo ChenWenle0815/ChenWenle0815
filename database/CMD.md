@@ -1,11 +1,4 @@
-<!--
- * @Author: cc_ray changrui03@meituan.com
- * @Date: 2024-06-20 11:24:32
- * @LastEditors: cc_ray changrui03@meituan.com
- * @LastEditTime: 2024-06-21 16:14:27
- * @FilePath: /ChenWenle0815/database/CMD.md
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
+
 ## Mac 好用的命令行工具 
 
 我们指导 MacOS 是在 Lunix 系统上演变过来的，因此经常会用到一些 shell 命令，但是 Mac 系统自带的工具，比较单调与朴实，我们可以改造以提升生产力。
