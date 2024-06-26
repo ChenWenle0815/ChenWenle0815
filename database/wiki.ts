@@ -9,6 +9,7 @@ import SEARCH from './SEARCH.md';
 import VSCODE_PLUGIN from './VSCODE_PLUGIN.md';
 import SHOT from './SHOT.md';
 import BARTENDER from './BARTENDER.md';
+import NUXT from './NUXT.md';
 interface IWiki {
     id: number;
     title: string;
@@ -54,7 +55,6 @@ const wikis:Array<IWiki> = [
     updateTime: 1625226000000,
     categoryId: 1,
     description: '这是很多面试题的来源之处'
-
   },
   {
     id: 13,
@@ -62,7 +62,7 @@ const wikis:Array<IWiki> = [
     content: No_Node,
     createTime: 1622720400000,
     updateTime: 1625312400000,
-    categoryId: 2
+    categoryId: 1
   },
   {
     id: 14,
@@ -76,7 +76,7 @@ const wikis:Array<IWiki> = [
   {
     id: 15,
     title: '关于 Nuxt 的几个问题',
-    content: JSON,
+    content: NUXT,
     createTime: 1622634000000,
     updateTime: 1625226000000,
     categoryId: 1,
@@ -96,7 +96,7 @@ const wikis:Array<IWiki> = [
     content: CMD,
     createTime: 1622720400000,
     updateTime: 1625312400000,
-    categoryId: 2
+    categoryId: 3
   },
 
   {
@@ -105,7 +105,7 @@ const wikis:Array<IWiki> = [
     content: SHOT,
     createTime: 1622720400000,
     updateTime: 1625312400000,
-    categoryId: 2
+    categoryId: 3
   },
   {
     id: 33,
@@ -113,7 +113,7 @@ const wikis:Array<IWiki> = [
     content: SEARCH,
     createTime: 1622720400000,
     updateTime: 1625312400000,
-    categoryId: 2
+    categoryId: 3
   },
   {
     id: 34,
@@ -121,7 +121,7 @@ const wikis:Array<IWiki> = [
     content: GITLENS,
     createTime: 1622720400000,
     updateTime: 1625312400000,
-    categoryId: 2
+    categoryId: 3
   },
   {
     id: 35,
@@ -129,7 +129,7 @@ const wikis:Array<IWiki> = [
     content: BARTENDER,
     createTime: 1622720400000,
     updateTime: 1625312400000,
-    categoryId: 2
+    categoryId: 3
   },
   {
     id: 36,
@@ -137,7 +137,7 @@ const wikis:Array<IWiki> = [
     content: VSCODE_PLUGIN,
     createTime: 1622720400000,
     updateTime: 1625312400000,
-    categoryId: 2
+    categoryId: 3
   },
 ];
 
