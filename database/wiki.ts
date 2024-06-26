@@ -72,7 +72,15 @@ const wikis:Array<IWiki> = [
     updateTime: 1625226000000,
     categoryId: 1,
     description: '日常遇到的一些 JSON 问题'
-
+  },
+  {
+    id: 15,
+    title: '关于 Nuxt 的几个问题',
+    content: JSON,
+    createTime: 1622634000000,
+    updateTime: 1625226000000,
+    categoryId: 1,
+    description: 'Nuxt 有中间件、有layout、有SSR...'
   },
   {
     id: 21,
@@ -158,6 +166,11 @@ const jobMenu: IMenu[] = [
         id: 14,
         name: '关于 JSON 我知道的也不多',
         desc: '关于 JSON 我知道的也不多',
+      },
+      {
+        id: 15,
+        name: '一些关于 Nuxt 的疑问 ',
+        desc: 'Nuxt有中间件、有layout、等等，让我产生了疑问',
       },
     ]
   },
