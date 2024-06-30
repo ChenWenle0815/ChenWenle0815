@@ -10,6 +10,8 @@ import VSCODE_PLUGIN from './VSCODE_PLUGIN.md';
 import SHOT from './SHOT.md';
 import BARTENDER from './BARTENDER.md';
 import NUXT from './NUXT.md';
+import SERVERLESS from './Serverless.md';
+import THRIFT from './THRIFT.md';
 interface IWiki {
     id: number;
     title: string;
@@ -84,8 +86,16 @@ const wikis:Array<IWiki> = [
   },
   {
     id: 21,
-    title: 'Http 与 RPC ',
-    content: 'Http 与 RPC ',
+    title: '我所了解的一点点 Thrift',
+    content: THRIFT,
+    createTime: 1622720400000,
+    updateTime: 1625312400000,
+    categoryId: 2
+  },
+  {
+    id: 22,
+    title: '谈谈 Serverless',
+    content: SERVERLESS,
     createTime: 1622720400000,
     updateTime: 1625312400000,
     categoryId: 2
@@ -181,13 +191,13 @@ const jobMenu: IMenu[] = [
     children: [
       {
         id: 21,
-        name: 'Http 与 RPC ',
+        name: '我所了解的一点点 Thrift',
         desc: 'Http 与 RPC ',
       },
       {
         id: 22,
         name: '你知道serverless吗？',
-        desc: '你知道serverless吗？',
+        desc: 'fass and bass',
       }
     ]
   },
